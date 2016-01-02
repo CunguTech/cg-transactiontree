@@ -38,7 +38,6 @@ public class DefaultTransactionManager implements TransactionManager {
 	
 	@Override
 	public Transaction begin() {
-		System.out.println("--------------------------------------");
 		transactionStat.incrBeginCount();
 		
 		Transaction transaction = createRootTransation();
